@@ -1,20 +1,15 @@
 import { Component } from '@angular/core';
-import { Person } from './shared/interfaces/person';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { ListGroupMenuComponent } from "./components/list-group-menu/list-group-menu.component";
+import { PersonTableComponent } from "../person-table/person-table.component";
+import { Person } from 'src/app/shared/interfaces/person';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-for-directive-example',
   standalone: true,
-  imports: [
-    RouterLink,
-    RouterOutlet,
-    ListGroupMenuComponent
-],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [PersonTableComponent],
+  templateUrl: './for-directive-example.component.html',
+  styleUrl: './for-directive-example.component.css'
 })
-export class AppComponent {
+export class ForDirectiveExampleComponent {
 
   users: Person[] = [
     {
