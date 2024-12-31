@@ -15,7 +15,6 @@ import { ListGroupMenuComponent } from "./components/list-group-menu/list-group-
   styleUrl: './app.component.css'
 })
 export class AppComponent {
- 
 
   users: Person[] = [
     {
