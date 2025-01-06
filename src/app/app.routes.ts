@@ -13,6 +13,7 @@ import { RestrictedContentExampleComponent } from './components/restricted-conte
 import { authGuard } from './shared/guards/auth.guard';
 import { UserLoginComponent } from './components/user-login/user-login.component';
 
+
 export const routes: Routes = [
   {
     path: 'component-input-example',
@@ -53,7 +54,6 @@ export const routes: Routes = [
     component: RestrictedContentExampleComponent,
     canActivate: [authGuard]
   },
-  ,
   { path: 'login', component: UserLoginComponent },
   { path: '', component: WelcomeComponent },
 ];
